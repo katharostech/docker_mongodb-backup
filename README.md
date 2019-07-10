@@ -1,5 +1,7 @@
 # Docker MongoDB Backup
 
+[![Build Status](https://cloud.drone.io/api/badges/katharostech/docker_mongodb-backup/status.svg)](https://cloud.drone.io/katharostech/docker_mongodb-backup)
+
 Extreemly simple MongoDB backup container that simply dumps MongoDB to a file on a cron schedule.
 
 ## Usage
