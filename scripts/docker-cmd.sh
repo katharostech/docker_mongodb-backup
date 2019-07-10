@@ -1,6 +1,6 @@
 #!/bin/bash
 
-backup_cmd="mongodump --host $MONGO_HOST --port $MONGO_PORT --archive=/backup/db-backup.archive.gz --gzip"
+backup_cmd="mongodump --host $MONGO_HOST --port $MONGO_PORT --archive=/backup/db-backup.archive.gz --gzip || $FAILURE_HOOK"
 
 echo "#!/bin/bash" > /run-backup.sh
 echo "$backup_cmd" > /run-backup.sh
